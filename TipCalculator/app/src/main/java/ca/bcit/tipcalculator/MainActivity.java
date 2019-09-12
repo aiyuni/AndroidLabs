@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onGridClick(View v){
+        Intent i = new Intent(this, GridActivity.class);
+        startActivity(i);
+    }
+
 }
