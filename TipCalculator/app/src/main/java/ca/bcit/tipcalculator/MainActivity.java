@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onTableClick(View v){
+        Intent i = new Intent(this, TableActivity.class);
+        startActivity(i);
+    }
+
 }
