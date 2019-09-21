@@ -2,7 +2,9 @@ package com.example.goodfoodsmarket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.*;
 import java.util.*;
 public class TopLevelActivity extends AppCompatActivity {
@@ -22,13 +24,13 @@ public class TopLevelActivity extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, categoryList);
         view.setAdapter(arrayAdapter);
 
-        /*view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+            public void onItemClick(AdapterView adapterView, View view, int position, long id) {
                 Intent intent = new Intent(TopLevelActivity.this, ProductTypeActivity.class);
                 intent.putExtra("categoryName", categoryList.get(position));
                 startActivity(intent);
             }
-        }); */
+        });
     }
 }
