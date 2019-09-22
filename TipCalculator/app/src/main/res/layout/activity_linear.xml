@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding='10dp'
-            android:text="BillAmount"
+            android:text="Bill Amount"
             android:textSize="20dp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="14dp"
@@ -33,7 +33,7 @@
             android:inputType="numberDecimal"
             android:ems="8"
             android:padding='12dp'
-            android:text="Amount" />
+            android:backgroundTint="@android:color/holo_red_dark" />
 
 
     </LinearLayout>
