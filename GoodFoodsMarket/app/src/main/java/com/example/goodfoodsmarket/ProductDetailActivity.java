@@ -15,8 +15,9 @@ public class ProductDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_detail);
-        Toast toast = Toast.makeText(getApplicationContext(), "inside product detail!", Toast.LENGTH_LONG);
-        toast.show();
+
+        /*Toast toast = Toast.makeText(getApplicationContext(), "inside product detail!", Toast.LENGTH_LONG);
+        toast.show(); */
 
 
         Bundle bundle = getIntent().getExtras();

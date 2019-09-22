@@ -51,7 +51,6 @@ public class ProductTypeActivity extends AppCompatActivity {
 
         ListView view = findViewById(R.id.listType);
 
-
         ArrayAdapter<Food> arrayAdapter = new ArrayAdapter<Food>(this, android.R.layout.simple_list_item_1, foodsList);
         view.setAdapter(arrayAdapter);
 
@@ -59,9 +58,9 @@ public class ProductTypeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Bitmap bitmap = BitmapFactory.decodeResource(getResources(), foodsList.get(position).getImageResourceId());
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-                byte[] b = baos.toByteArray();
+                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                byte[] b = byteArrayOutputStream.toByteArray();
 
                 Intent intent = new Intent(ProductTypeActivity.this, ProductDetailActivity.class);
                 intent.putExtra("name", foodsList.get(position).getName());

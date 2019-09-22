@@ -40,11 +40,22 @@ public class Food {
         _imageResourceId = imageResourceId;
     }
 
-    public String getName() { return _name; }
-    public String getCategory() { return _category; }
-    public String getUnit() { return _unit; }
-    public float getPrice() { return _price; }
-    public String getCountryOfOrigin() { return _countryOfOrigin; }
-    public int getImageResourceId() { return _imageResourceId; }
-    public String toString() { return _name; }
+    public String getName() {
+        return _name;
+    }
+    public String getCategory() {
+        return _category;
+    }
+    public String getUnit() {
+        return _unit;
+    }
+    public float getPrice() {
+        return _price;
+    }
+    public String getCountryOfOrigin() {
+        return _countryOfOrigin;
+    }
+    public int getImageResourceId() {
+        return _imageResourceId;
+    }
 }
