@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.text.NumberFormat;
 
-public class LinearActivity extends AppCompatActivity   implements TextView.OnEditorActionListener, View.OnClickListener{
+public class LinearActivity extends AppCompatActivity implements TextView.OnEditorActionListener, View.OnClickListener{
 
     // define variables for the widgets
     EditText billAmountEditText;
