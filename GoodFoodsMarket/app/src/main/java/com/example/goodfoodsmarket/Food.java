@@ -58,4 +58,7 @@ public class Food {
     public int getImageResourceId() {
         return _imageResourceId;
     }
+    public String toString(){
+        return _name;
+    }
 }
