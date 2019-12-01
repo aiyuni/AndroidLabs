@@ -24,7 +24,7 @@ import ca.bcit.ass2.lab13.math.game.Division;
 import ca.bcit.ass2.lab13.math.game.Multiplication;
 import ca.bcit.ass2.lab13.math.game.Subtraction;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivityKotlin extends AppCompatActivity {
 
     private static final int ADDITION = 0;
     private static final int SUBTRACTION = 1;
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     App.TOTAL_QUESTIONS += 1;
                     if (App.TOTAL_QUESTIONS >= 5) {
                         //finish();
-                        startActivity(new Intent(MainActivity.this, SuccessActivity.class));
+                        startActivity(new Intent(MainActivityKotlin.this, SuccessActivity.class));
                         App.TOTAL_QUESTIONS = 0;
                     }
                     Snackbar.make(view, String.format("You got it wrong, your current score is "+ App.SCORE + " out of " + App.TOTAL_QUESTIONS), Snackbar.LENGTH_LONG)
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (App.TOTAL_QUESTIONS >= 5) {
                     //finish();
-                    startActivity(new Intent(MainActivity.this, SuccessActivity.class));
+                    startActivity(new Intent(MainActivityKotlin.this, SuccessActivity.class));
                     App.TOTAL_QUESTIONS = 0;
                 } else {
                     doTheQuiz(random);

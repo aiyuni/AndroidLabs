@@ -31,7 +31,7 @@ public class SuccessActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
                 App.SCORE = 0;
                 finish();
-                startActivity(new Intent(SuccessActivity.this, MainActivity.class));
+                startActivity(new Intent(SuccessActivity.this, MainActivityKotlin.class));
             }
         });
     }

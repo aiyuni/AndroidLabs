@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasterActivity">
+
+    <Button
+        android:id="@+id/javaButton"
+        android:layout_width="134dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="104dp"
+        android:text="Java Math Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kotlinButton"
+        android:layout_width="129dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="128dp"
+        android:text="Kotlin Math Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/javaButton" />
+</android.support.constraint.ConstraintLayout>
